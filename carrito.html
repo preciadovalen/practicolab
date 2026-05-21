@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaMax - Carrito</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <span id="logo">🍕 PizzaMax</span>
+        <div id="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </div>
+    </div>
+
+    <div id="titulo-pagina">
+        <h1>TU CARRITO</h1>
+        <p>Revisá tu pedido antes de confirmar</p>
+    </div>
+
+    <div id="contenedor-carrito">
+
+        <div id="lista-carrito">
+            <h2>Productos seleccionados:</h2>
+            <p id="items-carrito">Tu carrito está vacío. <a href="menu.html">Ver menú</a></p>
+            <p id="total-carrito"></p>
+            <button onclick="vaciarCarrito()">🗑️ Vaciar carrito</button>
+        </div>
+
+        <div id="formulario-pedido">
+            <h2>Datos del pedido</h2>
+            <br>
+            <p>Nombre y apellido: <input type="text" id="ped-nombre" placeholder="Tu nombre completo"></p>
+            <p>Dirección: <input type="text" id="ped-direccion" placeholder="Calle y número"></p>
+            <p>Teléfono: <input type="text" id="ped-telefono" placeholder="Tu teléfono"></p>
+            <p>Forma de pago:
+                <select id="ped-pago">
+                    <option value="">-- Seleccioná --</option>
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Débito">Débito</option>
+                    <option value="Crédito">Crédito</option>
+                    <option value="Transferencia">Transferencia</option>
+                </select>
+            </p>
+            <p>Comentarios: <input type="text" id="ped-comentarios" placeholder="Ej: sin cebolla, toque extra de queso..."></p>
+            <br>
+            <button onclick="confirmarPedido()">✅ CONFIRMAR PEDIDO</button>
+            <button onclick="limpiarFormulario()">LIMPIAR</button>
+            <br><br>
+            <p id="resultado-pedido"></p>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>© 2025 PizzaMax - Todos los derechos reservados 🍕</p>
+    </div>
+
+    <script src="codigo.js"></script>
+</body>
+</html>

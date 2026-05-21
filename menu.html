@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaMax - Menú</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <span id="logo">🍕 PizzaMax</span>
+        <div id="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </div>
+    </div>
+
+    <div id="titulo-pagina">
+        <h1>NUESTRO MENÚ</h1>
+        <p>Elegí tu pizza favorita y agregala al carrito</p>
+    </div>
+
+    <div id="contenedor-menu">
+
+        <div class="card-pizza">
+            <p class="emoji-pizza">🍕</p>
+            <h3>Mozzarella</h3>
+            <p>Salsa de tomate, mozzarella fresca y orégano.</p>
+            <p class="precio">$5.500</p>
+            <button onclick="agregarAlCarrito('Mozzarella', 5500)">Agregar al carrito</button>
+        </div>
+
+        <div class="card-pizza">
+            <p class="emoji-pizza">🫑</p>
+            <h3>Napolitana</h3>
+            <p>Tomate, mozzarella, ajo, aceite de oliva y albahaca.</p>
+            <p class="precio">$6.000</p>
+            <button onclick="agregarAlCarrito('Napolitana', 6000)">Agregar al carrito</button>
+        </div>
+
+        <div class="card-pizza">
+            <p class="emoji-pizza">🥩</p>
+            <h3>Fugazzeta</h3>
+            <p>Doble mozzarella, cebolla caramelizada y aceitunas.</p>
+            <p class="precio">$6.500</p>
+            <button onclick="agregarAlCarrito('Fugazzeta', 6500)">Agregar al carrito</button>
+        </div>
+
+        <div class="card-pizza">
+            <p class="emoji-pizza">🐷</p>
+            <h3>Jamón y Morrones</h3>
+            <p>Mozzarella, jamón cocido y morrones asados.</p>
+            <p class="precio">$7.000</p>
+            <button onclick="agregarAlCarrito('Jamón y Morrones', 7000)">Agregar al carrito</button>
+        </div>
+
+        <div class="card-pizza">
+            <p class="emoji-pizza">🍄</p>
+            <h3>Cuatro Quesos</h3>
+            <p>Mozzarella, provolone, roquefort y parmesano.</p>
+            <p class="precio">$7.500</p>
+            <button onclick="agregarAlCarrito('Cuatro Quesos', 7500)">Agregar al carrito</button>
+        </div>
+
+        <div class="card-pizza">
+            <p class="emoji-pizza">🌶️</p>
+            <h3>Especial PizzaMax</h3>
+            <p>Pepperoni, cebolla, morrón, aceitunas y triple queso.</p>
+            <p class="precio">$8.500</p>
+            <button onclick="agregarAlCarrito('Especial PizzaMax', 8500)">Agregar al carrito</button>
+        </div>
+
+    </div>
+
+    <div id="mensaje-menu">
+        <p id="resultado-menu"></p>
+    </div>
+
+    <div id="footer">
+        <p>© 2025 PizzaMax - Todos los derechos reservados 🍕</p>
+    </div>
+
+    <script src="codigo.js"></script>
+</body>
+</html>

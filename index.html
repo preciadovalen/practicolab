@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaMax - La Mejor Pizza</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <span id="logo">🍕 PizzaMax</span>
+        <div id="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </div>
+    </div>
+
+    <div id="hero">
+        <h1>LA MEJOR PIZZA<br>DE LA CIUDAD</h1>
+        <p>Ingredientes frescos, sabor inigualable. ¡Pedí ahora!</p>
+        <button onclick="irAlMenu()">VER MENÚ</button>
+    </div>
+
+    <div id="nosotros">
+        <h2>¿Por qué elegirnos?</h2>
+        <div id="cards-home">
+
+            <div class="card-home">
+                <p class="icono">🔥</p>
+                <h3>Horno a leña</h3>
+                <p>Cocinamos en horno de barro tradicional para el mejor sabor.</p>
+            </div>
+
+            <div class="card-home">
+                <p class="icono">🌿</p>
+                <h3>Ingredientes frescos</h3>
+                <p>Seleccionamos los mejores productos del día, todos los días.</p>
+            </div>
+
+            <div class="card-home">
+                <p class="icono">🚀</p>
+                <h3>Envío rápido</h3>
+                <p>Tu pizza caliente en menos de 30 minutos o te hacemos un descuento.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="seccion-reserva">
+        <h2>Hacé tu reserva</h2>
+        <p>Completá el formulario y te confirmamos por teléfono.</p>
+        <br>
+        <p>Nombre: <input type="text" id="res-nombre" placeholder="Tu nombre"></p>
+        <p>Teléfono: <input type="text" id="res-telefono" placeholder="Tu teléfono"></p>
+        <p>Personas: <input type="number" id="res-personas" placeholder="Cantidad de personas"></p>
+        <br>
+        <button onclick="reservar()">CONFIRMAR RESERVA</button>
+        <button onclick="limpiarReserva()">LIMPIAR</button>
+        <p id="resultado-reserva"></p>
+    </div>
+
+    <div id="footer">
+        <p>© 2025 PizzaMax - Todos los derechos reservados 🍕</p>
+    </div>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
